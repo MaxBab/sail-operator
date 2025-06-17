@@ -1,3 +1,4 @@
+<!-- markdown-link-check-disable -->
 # API Reference
 
 ## Packages
@@ -3378,4 +3379,4 @@ _Appears in:_
 | `conditions` _[ZTunnelCondition](#ztunnelcondition) array_ | Represents the latest available observations of the object's current state. |  |  |
 | `state` _[ZTunnelConditionReason](#ztunnelconditionreason)_ | Reports the current state of the object. |  |  |
 
-
+<!-- markdown-link-check-enable -->

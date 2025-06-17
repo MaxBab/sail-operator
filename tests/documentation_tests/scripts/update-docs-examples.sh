@@ -132,9 +132,11 @@ done
 # Uncomment the html commented bash code block in the files
 # Read the files in the test/documentation_tests/ directory
 # The code block need to match this pattern:
-# <!-- ```bash
+# <!--
+# ```bash
 # <code>
-# ``` -->
+# ```
+# -->
 # If any other pattern is found, it will be ignored. Add more patterns here if needed.
 for file in "$OUTPUT_DIR"/*.md; do
   perl -0777 -pe 's/<!--\s*(```bash[^\n]*\n)(.*?)(\n```)\s*-->/$1$2$3/gms' "$file" > "${file}.tmp" && mv "${file}.tmp" "$file"
